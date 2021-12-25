@@ -225,29 +225,6 @@ ul {
   font-size: 0.9em;
   font-family: "Avenir-Heavy";
 }
-.social ul {
-  margin-left: -10px;
-}
-.social li {
-  display: inline-block;
-}
-.social li:hover {
-  opacity: 1;
-  cursor: pointer;
-  cursor: hand;
-}
-.linkedin a {
-  background-image: url(linkedin.svg);
-  display: block;
-  height: 20px;
-  width: 20px;
-  padding: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.linkedin a:hover {
-  opacity: 0.5;
-}
 .email {
   height: 20px;
   padding: 10px;
@@ -305,6 +282,19 @@ ul {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-family: "avenir-heavy";
+}
+
+.row {
+  width: 100%;
+  background: #134db6;
+  height: 1.5rem;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
