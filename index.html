@@ -1,83 +1,143 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <link rel="stylesheet" href="main.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Himanshu - Undergrad</title>
-      <meta name="author" content="Himanshu">
-      <link rel="icon" href="icons8-marker-h-50.png" type="image/x-icon">
-      <meta charset="utf-8">
-   </head>
-   <body onload="calcTime()">
-      <div id="homepage">
-         <!-- <div class="row">Built in 2021</div> -->
-         <div class="container">
-            <div class="small">
-               <div class="page-title">
-                  <div class="column">
-                     <h1 >Himanshu</h1>
-                     <h2>SWE Intern / Undergrad</h2>
-                  </div>
-               </div>
-               <div class="column">
-                  <div class="left">
-                     <p>I’m passionate about exploring technical domains, and the impact that technology can have on people, communities, and businesses.</p>
-                     <p>I’ve been working at <a href="https://www.highradius.com/">HighRadius </a>for the past <span id="time">7</span> <span id="time-unit">months</span> helping build the future of large business finance. I have invested my time in more than producing work, but into helping develop, and build for large businesses.</p>
-                     <p>During my undergrad, I’ve learned and explored a good amount of technologies used to build smart and scalable applications. And have worked with a diverse set of individuals.  A lot of my work highlights my time and experience building software for web.</p>
-                  </div>
-                  <div class="right">
-                     <div class="resume">
-                        <div class="label">Experience</div>
-                        <ul>
-                           <li>
-                              <div class="date">January 2021 - Present</div>
-                              <div class="role">SWE Intern, JavaScript & React</div>
-                              <div class="company"><a href="https://www.highradius.com/">HighRadius</a></div>
-                           </li>
-                           <li>
-                              <div class="date">April 2021 - Dec 2021</div>
-                              <div class="role">Research Intern, IoT & ML</div>
-                              <div class="company"><a href="https://research.samsung.com/sri-b">Samsung Research</a></div>
-                           </li>
-                           <li>
-                              <div class="date">July 2020 - Dec 2020</div>
-                              <div class="role">Python Developer</div>
-                              <div class="company"><a href="https://codepth.com/">Codepth</a></div>
-                           </li>
-                           <li>
-                              <div class="date">June 2019 - December 2019</div>
-                              <div class="role">Research Intern, ML</div>
-                              <div class="company"><a href="https://kiit.ac.in/">KiiT University</a></div>
-                           </li>
-                           <li>
-                              <div class="date">July 2018 to Present</div>
-                              <div class="role">BTech, CSE</div>
-                              <div class="company"><a href="https://kiit.ac.in/">KiiT University</a></div>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himanshu - Undergrad</title>
+    <meta name="author" content="Himanshu" />
+    <link rel="icon" href="icons8-marker-h-50.png" type="image/x-icon" />
+    <meta charset="utf-8" />
+  </head>
+  <body onload="calcTime()" id="body">
+    <div id="homepage">
+      <div class="container">
+        <div class="small">
+          <div class="page-title">
+            <div class="column">
+              <div class="left">
+                <h1>Himanshu</h1>
+                <h2>SWE Intern / Undergrad</h2>
+              </div>
+              <div class="right">
+                 <div id="button" class="btn-container" onclick="handleThemeChange()">
+                  <img src="./dark.svg">
+                 </div>
+              </div>
             </div>
-         </div>
-         <div class="footer">
-            <div class="container">
-               <div class="small">
-                  <h3>Oh. In my spare time I ride bikes, travel, read, and work on side projects. <a href="https://www.linkedin.com/in/hmansh/" style="display: inline;">Linkedin</a></h3>
-               </div>
+          </div>
+          <div class="column">
+            <div class="left">
+              <p>
+                I’m passionate about exploring technical domains, and the impact
+                that technology can have on people, communities, and businesses.
+              </p>
+              <p>
+                I’ve been working at
+                <a href="https://www.highradius.com/" class="a-tag">HighRadius </a
+                >for the past <span id="time">7</span>
+                <span id="time-unit">months</span> helping build the future of
+                large business finance. I have invested my time in more than
+                producing work, but into helping develop, and build for large
+                businesses.
+              </p>
+              <p>
+                During my undergrad, I’ve learned and explored a good amount of
+                technologies used to build smart and scalable applications. And
+                have worked with a diverse set of individuals. A lot of my work
+                highlights my time and experience building software for web.
+              </p>
             </div>
-         </div>
+            <div class="right">
+              <div class="resume">
+                <div class="label" id="label">Experience</div>
+                <ul>
+                  <li>
+                    <div class="date" id="date">January 2021 - Present</div>
+                    <div class="role">SWE Intern, JavaScript & React</div>
+                    <div class="company">
+                      <a href="https://www.highradius.com/" class="a-tag"
+                        >HighRadius</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="date" id="date">April 2021 - Dec 2021</div>
+                    <div class="role">Research Intern, IoT & ML</div>
+                    <div class="company">
+                      <a href="https://research.samsung.com/sri-b" class="a-tag"
+                        >Samsung Research</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="date" id="date">July 2020 - Dec 2020</div>
+                    <div class="role">Python Developer</div>
+                    <div class="company">
+                      <a href="https://codepth.com/" class="a-tag">Codepth</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="date" id="date">June 2019 - December 2019</div>
+                    <div class="role">Research Intern, ML</div>
+                    <div class="company">
+                      <a href="https://kiit.ac.in/" class="a-tag"
+                        >KiiT University</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="date" id="date">July 2018 to Present</div>
+                    <div class="role">BTech, CSE</div>
+                    <div class="company">
+                      <a href="https://kiit.ac.in/" class="a-tag"
+                        >KiiT University</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-   <script>
-      !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+      <div class="footer">
+        <div class="container">
+          <div class="small">
+            <h3>
+              Oh. In my spare time I ride bikes, travel, read, and work on side
+              projects.
+              <a
+              class="a-tag"
+                href="https://www.linkedin.com/in/hmansh/"
+                style="display: inline"
+                >Linkedin</a
+              >
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      !(function (e, t, n, s, u, a) {
+        e.twq ||
+          ((s = e.twq =
+            function () {
+              s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }),
+          (s.version = "1.1"),
+          (s.queue = []),
+          (u = t.createElement(n)),
+          (u.async = !0),
+          (u.src = "//static.ads-twitter.com/uwt.js"),
+          (a = t.getElementsByTagName(n)[0]),
+          a.parentNode.insertBefore(u, a));
+      })(window, document, "script");
       // Insert Twitter Pixel ID and Standard Event data below
-      twq('init','o7cey');
-      twq('track','PageView');
-      </script>
-   </body>
-   <script src="main.js"></script>
-   <!-- Twitter universal website tag code -->
-      <!-- End Twitter universal website tag code -->
+      twq("init", "o7cey");
+      twq("track", "PageView");
+    </script>
+  </body>
+  <script src="main.js"></script>
+  <!-- Twitter universal website tag code -->
+  <!-- End Twitter universal website tag code -->
 </html>
