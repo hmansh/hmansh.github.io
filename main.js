@@ -42,7 +42,6 @@ function handleThemeChange() {
         document.getElementById('body').style.color = colors.baseDark;
         document.getElementById('label').style.color = colors.baseBlue;
         document.getElementById('button').style.background = colors.baseBlue;
-        // document.getElementById('button').style.color = colors.baseBlue;
         var aTags = document.getElementsByClassName('a-tag');
         var dateTags = document.getElementsByClassName('date');
         for(let i = 0; i < aTags.length; i++){
