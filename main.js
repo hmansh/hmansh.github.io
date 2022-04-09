@@ -2,8 +2,8 @@ var darkMode = false;
 
 const colors = {
     baseBlue: "#134db6",
-    baseOrange: '#fc7a6a',
-    baseDark: "#181a1b",
+    baseOrange: '#ddff50',
+    baseDark: "#111111",
     white: "#fff",
     black: "#000"
 }
